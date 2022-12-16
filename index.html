@@ -2,9 +2,100 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>Admin Dash</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-	
+	<div class="container">
+		<div class="container-sidebar">
+			<div class="container-title">
+				<img src="images/logo.svg" class="logo">
+				<div class="wordmark">Dashboard</div>
+			</div>
+			<div class="container-navigation">
+				<ul class="navigation">
+					<li>Home</li>
+					<li>Profile</li>
+					<li>Messages</li>
+					<li>History</li>
+					<li>Tasks</li>
+					<li>Communities</li>
+				</ul>
+			</div>
+			<ul class="etc">
+				<li>Settings</li>
+				<li>Support</li>
+				<li>Privacy</li>
+			</ul>
+		</div>
+		<div class="container-page">
+			<div class="dash">
+				<div class="header">
+					<div class="container-search">
+						<img src="images/icons/search.svg" class="icons"></img>
+						<input type="text" class="search" placeholder="Search..."></input>
+					</div>
+					<div class="user">
+						<div class="username">Zari Wolper</div>
+						<img class="profile-pic" src="images/zari.png"></img>
+						<img src="images/icons/bell.svg" class="icons"></img>
+					</div>
+				</div>
+				<div class="toolbar">
+					<div class="welcome">
+						<img class="profile-pic" src="images/zari.png"></img>
+						<div class="greeting">
+							<div>Hello,</div>
+							<div class="username">Zari Wolper</div>
+						</div>
+					</div>
+					<div class="container-actions">
+						<button>Share</button>
+						<button>Upload</button>
+						<button>New</button>
+					</div>
+				</div>
+			</div>
+			<div class="container-cards">
+				<div class="primary">
+					<div class="projects">
+						<h1>Your Projects</h1>
+						<div class="cards" id="cards">
+							<div class="card">
+								<div class="card-title">Super Cool Project</div>
+								<div class="card-description">
+									<p>Sed tempus ut lacus ut scelerisque, Suspendisse sollicitudin</p>
+								</div>
+								<div class="card-actions">
+									<img src="images/icons/star.svg"></img>
+									<img src="images/icons/eye.svg"></img>
+									<img src="images/icons/share-alt.svg"></img>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-title">Super Cool Project</div>
+								<div class="card-description">
+									<p>Sed tempus ut lacus ut scelerisque, Suspendisse sollicitudin</p>
+								</div>
+								<div class="card-actions">
+									<img src="images/icons/star.svg"></img>
+									<img src="images/icons/eye.svg"></img>
+									<img src="images/icons/share-alt.svg"></img>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="secondary">
+					<h1 class="announcements">Announcements</h1>
+					<h1 class="trending">Trending</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
 </body>
 </html>
